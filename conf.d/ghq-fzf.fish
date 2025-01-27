@@ -6,6 +6,5 @@ function _ghq-fzf_uninstall --on-event ghq-fzf_uninstall
         | string replace --filter --regex -- "bind (.+)( '?__ghq-fzf.*)" 'bind -e $1' \
         | source
 
-    functions --erase __ghq-fzf
     functions --erase _ghq-fzf_uninstall
 end
